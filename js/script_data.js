@@ -11,10 +11,13 @@ function caricaJSON() {
             console.log(data.titoli_a_principali);
 
             let html = '';
-            data.titoli_a_principali.forEach(function (titolo) {
-                html += `
-            <li><a href="#${titolo.titolo}">${titolo.titolo}</a></li>
-            `;
+            data.titoli_a_principali.forEach(function (item) {
+
+                if(item.titolo=="home"){
+                    html += `<li class="active"><a href="#${item.titolo}">${item.titolo}</a></li>`;
+                }else{
+                    html += `<li><a href="#${item.titolo}">${item.titolo}</a></li>`;
+                }
             })
             document.getElementById('menu').innerHTML = html;
         })
