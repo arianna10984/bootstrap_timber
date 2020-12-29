@@ -16,7 +16,7 @@
       "titolo": "contatti"
     }
   ],
-  
+
 
   "titoli_home": [
     {
@@ -29,14 +29,14 @@
 
   "quantità_X": [
     {
-      "primo_paragrafo": [
+      "paragrafo": [
         {
           "titolo_collaboratori": "Collaboratori",
           "paragrafo_collaboratori": "ogni mese vengono ammessi molti collaboratori selezionati in modo inflessibile "
         }
       ],
 
-      "secondo_paragrafo" : [
+      "paragrafo" : [
         {
 
         }
