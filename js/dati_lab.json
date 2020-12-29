@@ -1,32 +1,48 @@
-
 {
   "titoli_a_principali": [
-    
-      {"1_titolo": "home"},
-      {"2_titolo": "chi siamo"},
-      {"3_titolo": "besteller"},
-      {"4_titolo": "novità"},
-      {"5_titolo": "contatti"}
-
+    {
+      "titolo": "home"
+    },
+    {
+      "titolo": "chi siamo"
+    },
+    {
+      "titolo": "besteller"
+    },
+    {
+      "titolo": "novità"
+    },
+    {
+      "titolo": "contatti"
+    }
   ],
+  
 
   "titoli_home": [
     {
-      "titolo_1" : "i libri migliori",
-      "titolo_2" : "con la massima qualità",
-      "titolo_3" : "al minor prezzo "
+      "titolo_1": "i libri migliori",
+      "titolo_2": "con la massima qualità",
+      "titolo_3": "al minor prezzo "
     }
   ],
 
 
-  "quantità_X" : [
+  "quantità_X": [
     {
-      "primo_paragrafo" : [
+      "primo_paragrafo": [
         {
-          "titolo_collaboratori" : "Collaboratori",
-          "paragrafo_collaboratori" : "ogni mese vengono ammessi molti collaboratori selezionati con "
+          "titolo_collaboratori": "Collaboratori",
+          "paragrafo_collaboratori": "ogni mese vengono ammessi molti collaboratori selezionati in modo inflessibile "
         }
+      ],
+
+      "secondo_paragrafo" : [
+        {
+
+        }
+
       ]
+
     }
   ]
 }
