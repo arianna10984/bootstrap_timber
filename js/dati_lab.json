@@ -1,4 +1,4 @@
-{
+/*{
     "titolo_site": "libri",
     "paginas": [
         {
@@ -41,4 +41,21 @@
         }
         
     ]
+} */
+
+
+{
+  "titoli_a_principali": [
+    {
+      "1_titolo": "home",
+      "2_titolo": "chi siamo",
+      "3_titolo": "besteller",
+      "4_titolo": "novità",
+      "5_titolo": "contatti"
+    }
+  ],
+
+  "titoli_home": [
+  ]
 }
+
