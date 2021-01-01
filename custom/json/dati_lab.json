@@ -1,0 +1,166 @@
+{
+  "home": {
+    "titoli_a_principali": [
+      {
+        "titolo": "home"
+      },
+      {
+        "titolo": "chi siamo"
+      },
+      {
+        "titolo": "besteller"
+      },
+      {
+        "titolo": "novità"
+      },
+      {
+        "titolo": "contatti"
+      }
+    ],
+
+    "titoli_home": [
+      {
+        "titolo": "i libri migliori"
+      },
+      {
+        "titolo": "con la massima qualità"
+      },
+      {
+        "titolo": "al minor prezzo "
+      }
+    ],
+
+    "quantita_X": [
+      {
+        "numero": 0,
+        "titolo": "Collaboratoriii",
+        "testo": "ogni mese vengono ammessi molti collaboratori selezionati in modo inflessibile "
+      },
+      {
+        "numero": 0,
+        "titolo": "aaaaaa",
+        "testo": "hhhhhh"
+      },
+      {
+        "numero": 0,
+        "titolo": "ooooooo",
+        "testo": "iiiiiiiiii"
+      }
+    ],
+
+    "ultimo_testo_home": {
+      "h3": "",
+      "h4": "",
+      "img": "direzione img"
+    }
+  },
+
+  "besteller": {
+
+    "opzioni_libri": [
+      {
+        "opzione": "tutti i besteller"
+      },
+      {
+        "opzione": "gialli"
+      },
+      {
+        "opzione": "romanzi e narrativa"
+      },
+      {
+        "opzione": "fantasy"
+      },
+      {
+        "opzione": "biografie"
+      }
+    ],
+
+    "lista_besteller": [
+      {
+        "img": "ruta_img",
+        "titolo": ""
+      },
+      {
+        "img": "ruta_img",
+        "titolo": ""
+      },
+      {
+        "img": "ruta_img",
+        "titolo": ""
+      },
+      {
+        "img": "ruta_img",
+        "titolo": ""
+      },
+      {
+        "img": "ruta_img",
+        "titolo": ""
+      },
+      {
+        "img": "ruta_img",
+        "titolo": ""
+      },
+      {
+        "img": "ruta_img",
+        "titolo": ""
+      },
+      {
+        "img": "ruta_img",
+        "titolo": ""
+      },
+      {
+        "img": "ruta_img",
+        "titolo": ""
+      }
+    ]
+  },
+
+  "novità": {
+    "introduzione": {
+      "h3": "le nostre novità e progetti",
+      "p": "ricevi tutte le nostre novità ,idee e progetti dal nostro blog"
+    },
+
+    "progetti": [
+
+      {
+        "img": "",
+        "a": "",
+        "p": ""
+      },
+      {
+        "img": "",
+        "a": "",
+        "p": ""
+      },
+      {
+        "img": "",
+        "a": "",
+        "p": ""
+      },
+      {
+        "img": "",
+        "a": "",
+        "p": ""
+      },
+      {
+        "img": "",
+        "a": "",
+        "p": ""
+      },
+      {
+        "img": "",
+        "a": "",
+        "p": ""
+      }
+    ]
+  },
+
+  "contatti": {
+    "ultimo_paragrafo": {
+      "h3": "ti ringraziamo di aver visualizzato il nostro sito ",
+      "p": "e hai bisogno di altre informazioni puoi inviarci un messaggio con il form qui sopra"
+    }
+  }
+}
+
