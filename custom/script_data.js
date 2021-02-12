@@ -36,18 +36,18 @@ function carica_titoli_a_principali(data) {
         calculateScroll();
     });
     $('.navmenu ul li a').click(function () {
-        $('html, body').animate({scrollTop: $(this.hash).offset().top - 80}, 800);
+        $('html, body').animate({ scrollTop: $(this.hash).offset().top - 80 }, 800);
         return false;
     });
 
 }
 
 function carica_titoli_home(data) {
-    console.log(data.home.titoli_home);
+    //console.log(data.home.titoli_home);
     let html = '';
 
     data.home.titoli_home.forEach(function (item) {
-        console.log(item.titolo);
+        //console.log(item.titolo);
 
         var div = document.getElementById("camera_wrap_1")
 
@@ -78,21 +78,27 @@ function carica_titoli_home(data) {
 }
 
 function caricare_paragrafi(data) {
+    console.log("caricare_paragrafi ----");
+
     let html = '';
-    var conteniore_paragrafo = document.getElementById("paragrafo");
+    var div_padre= document.querySelector("#home > div:nth-child(3) > div > div");
+    var ultimo_testo_home = data.home.ultimo_testo_home;
+
     console.log(data);
 
-    data.home.quantita_X.forEach(function (item, index) {
+    var h3 = ultimo_testo_home.h3;
+    var h4 = ultimo_testo_home.h4;
+    var imagen = ultimo_testo_home.img;
 
-        html += `<div class="col-md-4 project">
-                    <h3 id="counter${index}">${item.numero}</h3>
-                    <h4>${item.titolo}</h4>
-                    <p>${item.testo}</p>
-                </div>`;
+    html +=`<h3>${h3}</h3>
+    <h4>${h4}</h4>`
+    div_padre.innerHTML= html;
 
-        conteniore_paragrafo.innerHTML = html;
 
-    })
+
+
+
+
 
 }
 
