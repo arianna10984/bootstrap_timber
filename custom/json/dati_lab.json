@@ -51,13 +51,13 @@
     "ultimo_testo_home": {
       "h3": "AAAAAAAAAAAAAAAAAAA",
       "h4": "BBBBBBBBBBBBBBBBBBBBSS",
-      "img": "direzione img"
+      "img": "gggg"
     }
   },
 
   "besteller": {
 
-    "opzioni_libri": [
+    "opzioni_libri": [  
       {
         "opzione": "tutti i besteller"
       },

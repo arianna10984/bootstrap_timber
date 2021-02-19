@@ -11,6 +11,7 @@ function caricaJSON() {
             carica_titoli_a_principali(data);
             carica_titoli_home(data);
             caricare_paragrafi(data);
+            carica_immagine(data);
 
         })
         .catch(error => console.log(error));
@@ -78,30 +79,33 @@ function carica_titoli_home(data) {
 }
 
 function caricare_paragrafi(data) {
-    console.log("caricare_paragrafi ----");
+    //console.log("caricare_paragrafi ----");
 
-    let html = '';
-    var div_padre= document.querySelector("#home > div:nth-child(3) > div > div");
+    let html = ''
+    var div_padre = document.querySelector("#home > div:nth-child(3) > div > div");
     var ultimo_testo_home = data.home.ultimo_testo_home;
 
     console.log(data);
 
     var h3 = ultimo_testo_home.h3;
     var h4 = ultimo_testo_home.h4;
-    var imagen = ultimo_testo_home.img;
+    //var imagen = ultimo_testo_home.img;
 
-    html +=`<h3>${h3}</h3>
+    html += `<h3>${h3}</h3>
     <h4>${h4}</h4>`
-    div_padre.innerHTML= html;
-
-
-
-
-
-
+    div_padre.innerHTML = html;
 
 }
+function carica_immagine(data) {
+    console.log("carica_immagine--------------");
+    let html = ''
+    var div_padre = document.querySelector("#home > div:nth-child(4) > div > div");
+    var immagine_home = data.home.ultimo_testo_home.img;
+     
+    html += `<img>${immagine_home}</img> `
+    div_padre.innerHTML = html
 
+}
 function calculateScroll() {
     var contentTop = [];
     var contentBottom = [];
