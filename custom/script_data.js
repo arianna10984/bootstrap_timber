@@ -102,7 +102,7 @@ function carica_immagine(data) {
     var div_padre = document.querySelector("#home > div:nth-child(4) > div > div");
     var immagine_home = data.home.ultimo_testo_home.img;
      
-    html += `<img>${immagine_home}</img> `
+    html += `<img src="${immagine_home}">`
     div_padre.innerHTML = html
 
 }
