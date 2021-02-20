@@ -98,7 +98,9 @@ function caricare_paragrafi(data) {
 }
 function carica_immagine(data) {
     console.log("carica_immagine--------------");
-    let html = ''
+    let html = '';
+    document.querySelector("#home > div:nth-child(4) > div > div")
+
     var div_padre = document.querySelector("#home > div:nth-child(4) > div > div");
     var immagine_home = data.home.ultimo_testo_home.img;
      
