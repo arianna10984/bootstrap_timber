@@ -51,6 +51,12 @@
 
   "besteller": {
 
+    "primo_paragrafo_bs":{
+      "h3":"fffffffffff",
+      "p":"sssdddddddddd"
+    },
+
+
     "opzioni_libri": [  
       {
         "opzione": "tutti i besteller"
@@ -148,13 +154,7 @@
         "p": ""
       }
     ]
-  },
-
-  "contatti": {
-    "ultimo_paragrafo": {
-      "h3": "ti ringraziamo di aver visualizzato il nostro sito ",
-      "p": "e hai bisogno di altre informazioni puoi inviarci un messaggio con il form qui sopra"
-    }
   }
+
 }
 
