@@ -12,6 +12,8 @@ function caricaJSON() {
             carica_titoli_home(data);
             caricare_paragrafi(data);
             carica_immagine(data);
+            carica_primo_paragrafo_bs(data);
+            carica_ul_opzioni(data);
 
         })
         .catch(error => console.log(error));
@@ -50,7 +52,7 @@ function carica_titoli_home(data) {
     data.home.titoli_home.forEach(function (item) {
         //console.log(item.titolo);
 
-        var div = document.getElementById("camera_wrap_1")
+        var div = document.getElementById("camera_wrap_1");
 
         html += `<div data-thumb="" data-src="images/slides/blank.gif">
 								<div class="img-responsive camera_caption fadeFromBottom">
@@ -81,31 +83,65 @@ function carica_titoli_home(data) {
 function caricare_paragrafi(data) {
     //console.log("caricare_paragrafi ----");
 
-    let html = ''
+    let html = '';
     var div_padre = document.querySelector("#home > div:nth-child(3) > div > div");
     var ultimo_testo_home = data.home.ultimo_testo_home;
 
-    console.log(data);
+    //console.log(data);
 
     var h3 = ultimo_testo_home.h3;
     var h4 = ultimo_testo_home.h4;
     //var imagen = ultimo_testo_home.img;
 
     html += `<h3>${h3}</h3>
-    <h4>${h4}</h4>`
+    <h4>${h4}</h4>`;
     div_padre.innerHTML = html;
 
 }
+
 function carica_immagine(data) {
-    console.log("carica_immagine--------------");
-    let html = ''
+    //console.log("carica_immagine--------------");
+    let html = '';
+    document.querySelector("#home > div:nth-child(4) > div > div");
+
     var div_padre = document.querySelector("#home > div:nth-child(4) > div > div");
     var immagine_home = data.home.ultimo_testo_home.img;
      
-    html += `<img>${immagine_home}</img> `
+    html += `<img src="${immagine_home}">`;
     div_padre.innerHTML = html
 
 }
+
+function carica_primo_paragrafo_bs(data) {
+    //console.log("carica carica_primo_paragrafo_bs ------------------");
+    let html = '';
+    var div_padre = document.querySelector("#besteller > div.line3 > div > div.row.Ama > div");
+
+    var h3 = data.besteller.primo_paragrafo_bs.h3;
+    var p =data.besteller.primo_paragrafo_bs.p;
+
+    html += `<h3>${h3}</h3>
+             <p>${p}</p>
+    `;
+    div_padre.innerHTML = html;
+
+}
+
+function carica_ul_opzioni(data) {
+    console.log("carica_ul_opzioni----------------------------------");
+    let html = '';
+    var div_padre= document.getElementById("filter");
+    console.log(div_padre);
+
+    data.besteller.opzioni_libri.forEach(function (item) {
+        console.log(item.opzione);
+        html += `<li>${item.opzione}</li>`;
+        div_padre.innerHTML= html;
+    });
+}
+
+
+
 function calculateScroll() {
     var contentTop = [];
     var contentBottom = [];
