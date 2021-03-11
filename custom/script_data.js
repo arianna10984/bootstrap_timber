@@ -14,6 +14,7 @@ function caricaJSON() {
             carica_immagine(data);
             carica_primo_paragrafo_bs(data);
             carica_ul_opzioni(data);
+            //carica_portfolio_block(data);
 
         })
         .catch(error => console.log(error));
@@ -39,7 +40,7 @@ function carica_titoli_a_principali(data) {
         calculateScroll();
     });
     $('.navmenu ul li a').click(function () {
-        $('html, body').animate({ scrollTop: $(this.hash).offset().top - 80 }, 800);
+        $('html, body').animate({scrollTop: $(this.hash).offset().top - 80}, 800);
         return false;
     });
 
@@ -106,7 +107,7 @@ function carica_immagine(data) {
 
     var div_padre = document.querySelector("#home > div:nth-child(4) > div > div");
     var immagine_home = data.home.ultimo_testo_home.img;
-     
+
     html += `<img src="${immagine_home}">`;
     div_padre.innerHTML = html
 
@@ -118,7 +119,7 @@ function carica_primo_paragrafo_bs(data) {
     var div_padre = document.querySelector("#besteller > div.line3 > div > div.row.Ama > div");
 
     var h3 = data.besteller.primo_paragrafo_bs.h3;
-    var p =data.besteller.primo_paragrafo_bs.p;
+    var p = data.besteller.primo_paragrafo_bs.p;
 
     html += `<h3>${h3}</h3>
              <p>${p}</p>
@@ -130,16 +131,48 @@ function carica_primo_paragrafo_bs(data) {
 function carica_ul_opzioni(data) {
     console.log("carica_ul_opzioni----------------------------------");
     let html = '';
-    var div_padre= document.getElementById("filter");
-    console.log(div_padre);
+    var div_padre = document.getElementById("filter");
+    //console.log(div_padre);
 
     data.besteller.opzioni_libri.forEach(function (item) {
-        console.log(item.opzione);
-        html += `<li>${item.opzione}</li>`;
-        div_padre.innerHTML= html;
+
+        //console.log(item);
+
+        if (item.opzione == "tutti i besteller") {
+            html += `<li><a class="selected" href="#filter" data-option-value="${item.data_option_value}">${item.opzione}</a></li>`;
+        } else {
+            html += `<li> <a href ="#filter"  data-option-value=".${item.data_option_value}" >${item.opzione}</a></li>`;
+        }
     });
+    div_padre.innerHTML = html;
 }
 
+function carica_portfolio_block(data) {
+    console.log("carica_portfolio_block");
+    console.log("data: ", data);
+
+    let html = '';
+    var div_padre = document.querySelector("div.portfolio_block");
+    data.besteller.lista_besteller.forEach(function (item) {
+
+        html += `<div class="element col-sm-4   gall branding">
+        <a class="plS" href="images/prettyPhotoImages/pic1.jpg" rel="prettyPhoto[gallery2]">
+            <img class="img-responsive picsGall" src="images/prettyPhotoImages/thumb_pic1.jpg"
+                 alt="pic1 Gallery"/>
+        </a>
+        <div class="view project_descr ">
+            <h3><a href="#">Recycled Paper - Business Card Mock Up</a></h3>
+            <ul>
+                <li><i class="fa fa-eye"></i>215</li>
+                <li><a class="heart" href="#"><i class="fa-heart-o"></i>14</a></li>
+            </ul>
+        </div>
+    </div>`;
+    })
+
+    div_padre.innerHTML = html;
+
+}
 
 
 function calculateScroll() {
