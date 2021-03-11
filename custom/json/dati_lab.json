@@ -57,59 +57,66 @@
       },
       {
         "opzione": "gialli",
-        "data_option_value": "polygraphy"
+        "data_option_value": "gialli"
       },
       {
         "opzione": "romanzi e narrativa",
-        "data_option_value": "branding"
+        "data_option_value": "romanzi_narrativa"
       },
       {
         "opzione": "fantasy",
-        "data_option_value": "web"
-
+        "data_option_value": "fantasy"
       },
       {
         "opzione": "biografie",
-        "data_option_value": "text_styles"
-
+        "data_option_value": "biografie"
       }
     ],
     "lista_besteller": [
       {
-        "img": "ruta_img",
-        "titolo": ""
+        "img": "il_mondo fino_a_7.jpg",
+        "titolo": "",
+        "data_option_value": "romanzi_narrativa"
       },
       {
-        "img": "ruta_img",
-        "titolo": ""
+        "img": "l_amico_immaginario.png",
+        "titolo": "",
+        "data_option_value": "romanzi_narrativa"
       },
       {
-        "img": "ruta_img",
-        "titolo": ""
+        "img": "l_attraversaspecchi.png",
+        "titolo": "",
+        "data_option_value": "fantasy"
       },
       {
-        "img": "ruta_img",
-        "titolo": ""
+        "img": "anna_frank.jpg",
+        "titolo": "",
+        "data_option_value": "biografie"
       },
       {
-        "img": "ruta_img",
-        "titolo": ""
+        "img": "il_castello_errante_di_howl.png",
+        "titolo": "",
+        "data_option_value": "fantasy"
       },
       {
-        "img": "ruta_img",
-        "titolo": ""
+        "img": "sherlock_holmes.png",
+        "titolo": "",
+        "data_option_value": "gialli"
       },
       {
-        "img": "ruta_img",
-        "titolo": ""
+        "img": "piccole_donne.jpg",
+        "titolo": "",
+        "data_option_value": "romanzi_narrativa"
       },
       {
-        "img": "ruta_img",
-        "titolo": ""
+        "img": "obama.jpg",
+        "titolo": "",
+        "data_option_value": "biografie"
       },
       {
-        "img": "ruta_img",
-        "titolo": ""
+        "img": "ce_un_cadavere_in_biblioteca.png",
+        "titolo": "",
+        "data_option_value": "gialli"
       }
     ]
   },

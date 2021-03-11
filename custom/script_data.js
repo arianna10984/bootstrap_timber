@@ -1,4 +1,5 @@
 //console.log("ciao desde script_data.js");
+caricaJSON();
 
 function caricaJSON() {
 
@@ -14,13 +15,12 @@ function caricaJSON() {
             carica_immagine(data);
             carica_primo_paragrafo_bs(data);
             carica_ul_opzioni(data);
-            //carica_portfolio_block(data);
+            carica_portfolio_block(data);
 
         })
         .catch(error => console.log(error));
 }
 
-caricaJSON();
 
 
 function carica_titoli_a_principali(data) {
@@ -63,6 +63,7 @@ function carica_titoli_home(data) {
 
 
         div.innerHTML = html;
+
 
         jQuery(function () {
             jQuery('#camera_wrap_1').camera({
@@ -129,7 +130,7 @@ function carica_primo_paragrafo_bs(data) {
 }
 
 function carica_ul_opzioni(data) {
-    console.log("carica_ul_opzioni----------------------------------");
+    //console.log("carica_ul_opzioni----------------------------------");
     let html = '';
     var div_padre = document.getElementById("filter");
     //console.log(div_padre);
@@ -155,9 +156,9 @@ function carica_portfolio_block(data) {
     var div_padre = document.querySelector("div.portfolio_block");
     data.besteller.lista_besteller.forEach(function (item) {
 
-        html += `<div class="element col-sm-4   gall branding">
-        <a class="plS" href="images/prettyPhotoImages/pic1.jpg" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="images/prettyPhotoImages/thumb_pic1.jpg"
+        html += `<div class="element col-sm-4 gall ${item.data_option_value}">
+        <a class="plS" href="custom/img_libri_timber/${item.img}" rel="prettyPhoto[gallery2]">
+            <img class="img-responsive picsGall" src="custom/img_libri_timber/${item.img}"
                  alt="pic1 Gallery"/>
         </a>
         <div class="view project_descr ">
@@ -172,6 +173,19 @@ function carica_portfolio_block(data) {
 
     div_padre.innerHTML = html;
 
+    prettyPhoto();
+
+
+}
+
+function prettyPhoto() {
+    $(".pretty a[rel^='prettyPhoto']").prettyPhoto({
+        animation_speed: 'normal',
+        theme: 'light_square',
+        slideshow: 3000,
+        autoplay_slideshow: true,
+        social_tools: ''
+    });
 }
 
 
