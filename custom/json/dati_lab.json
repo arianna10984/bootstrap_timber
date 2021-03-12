@@ -45,6 +45,7 @@
       "img": "custom/img/immagine_home.jpg"
     }
   },
+
   "besteller": {
     "primo_paragrafo_bs": {
       "h3": "fffffffffff",
@@ -74,86 +75,181 @@
     ],
     "lista_besteller": [
       {
-        "img": "il_mondo fino_a_7.jpg",
+        "img": "il_mondo_fino_a_7.jpg",
         "titolo": "",
-        "data_option_value": "romanzi_narrativa"
+        "data_option_value": "romanzi_narrativa",
+        "fa_eye": "549",
+        "fa_heart_o":"456",
+        "title_a": "il mondo fino a 7"
       },
       {
         "img": "l_amico_immaginario.png",
         "titolo": "",
-        "data_option_value": "romanzi_narrativa"
+        "data_option_value": "romanzi_narrativa",
+        "fa_eye": "549",
+        "fa_heart_o":"456",
+        "title_a": "l'amico immaginario"
       },
       {
         "img": "l_attraversaspecchi.png",
         "titolo": "",
-        "data_option_value": "fantasy"
+        "data_option_value": "fantasy",
+        "fa_eye": "549",
+        "fa_heart_o":"456",
+        "title_a": "l'attraversaspecchi"
       },
       {
         "img": "anna_frank.jpg",
         "titolo": "",
-        "data_option_value": "biografie"
+        "data_option_value": "biografie",
+        "fa_eye": "549",
+        "fa_heart_o":"456",
+        "title_a": "anna frank"
       },
       {
         "img": "il_castello_errante_di_howl.png",
         "titolo": "",
-        "data_option_value": "fantasy"
+        "data_option_value": "fantasy",
+        "fa_eye": "549",
+        "fa_heart_o":"456",
+        "title_a": "il castello errante di howl"
       },
       {
         "img": "sherlock_holmes.png",
         "titolo": "",
-        "data_option_value": "gialli"
+        "data_option_value": "gialli",
+        "fa_eye": "549",
+        "fa_heart_o":"456",
+        "title_a": "sherlock holmes"
       },
       {
         "img": "piccole_donne.jpg",
         "titolo": "",
-        "data_option_value": "romanzi_narrativa"
+        "data_option_value": "romanzi_narrativa",
+        "fa_eye": "549",
+        "fa_heart_o":"456",
+        "title_a": "piccole donne"
       },
       {
         "img": "obama.jpg",
         "titolo": "",
-        "data_option_value": "biografie"
+        "data_option_value": "biografie",
+        "fa_eye": "549",
+        "fa_heart_o":"456",
+        "title_a": "obama biografia"
       },
       {
         "img": "ce_un_cadavere_in_biblioteca.png",
         "titolo": "",
-        "data_option_value": "gialli"
+        "data_option_value": "gialli",
+        "fa_eye": "549",
+        "fa_heart_o":"456",
+        "title_a": "c'é un cadavere in biblioteca"
       }
     ]
   },
+
   "novità": {
     "introduzione": {
       "h3": "le nostre novità e progetti",
       "p": "ricevi tutte le nostre novità ,idee e progetti dal nostro blog"
     },
-    "progetti": [
+    "novità & consigli": [
       {
         "img": "",
-        "a": "",
+        "h3": "",
+        "ul": [
+          {
+            "li":"",
+            "li":"",
+            "li":""
+          }
+        ],
+        "p": ""
+
+      },
+      {
+        "img": "",
+        "h3": "",
+        "ul": [
+          {
+            "li":"",
+            "li":"",
+            "li":""
+          }
+        ],
         "p": ""
       },
       {
         "img": "",
-        "a": "",
+        "h3": "",
+        "ul": [
+          {
+            "li":"",
+            "li":"",
+            "li":""
+          }
+        ],
         "p": ""
       },
       {
         "img": "",
-        "a": "",
+        "h3": "",
+        "ul": [
+          {
+            "li":"",
+            "li":"",
+            "li":""
+          }
+        ],
         "p": ""
       },
       {
         "img": "",
-        "a": "",
+        "h3": "",
+        "ul": [
+          {
+            "li":"",
+            "li":"",
+            "li":""
+          }
+        ],
         "p": ""
       },
       {
         "img": "",
-        "a": "",
+        "h3": "",
+        "ul": [
+          {
+            "li":"",
+            "li":"",
+            "li":""
+          }
+        ],
         "p": ""
       },
       {
         "img": "",
-        "a": "",
+        "h3": "",
+        "ul": [
+          {
+            "li":"",
+            "li":"",
+            "li":""
+          }
+        ],
+        "p": ""
+      },
+      {
+        "img": "",
+        "h3": "",
+        "ul": [
+          {
+            "li":"",
+            "li":"",
+            "li":""
+          }
+        ],
         "p": ""
       }
     ]

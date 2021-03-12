@@ -1,4 +1,4 @@
-//console.log("ciao desde script_data.js");
+console.log("ciao desde script_data.js");
 caricaJSON();
 
 function caricaJSON() {
@@ -158,14 +158,13 @@ function carica_portfolio_block(data) {
 
         html += `<div class="element col-sm-4 gall ${item.data_option_value}">
         <a class="plS" href="custom/img_libri_timber/${item.img}" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="custom/img_libri_timber/${item.img}"
-                 alt="pic1 Gallery"/>
+            <img class="img-responsive picsGall" src="custom/img_libri_timber/${item.img}" alt="pic1 Gallery"/>
         </a>
         <div class="view project_descr ">
-            <h3><a href="#">Recycled Paper - Business Card Mock Up</a></h3>
+            <h3><a  href="custom/img_libri_timber/${item.img} " rel="prettyPhoto[gallery3]">${item.title_a}</a></h3>
             <ul>
-                <li><i class="fa fa-eye"></i>215</li>
-                <li><a class="heart" href="#"><i class="fa-heart-o"></i>14</a></li>
+                <li><i class="fa fa-eye"></i>${item.fa_eye}</li>
+                <li><i class="fa-heart-o"></i>${item.fa_heart_o}</li>
             </ul>
         </div>
     </div>`;
