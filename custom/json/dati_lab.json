@@ -45,7 +45,6 @@
       "img": "custom/img/immagine_home.jpg"
     }
   },
-
   "besteller": {
     "primo_paragrafo_bs": {
       "h3": "fffffffffff",
@@ -79,7 +78,7 @@
         "titolo": "",
         "data_option_value": "romanzi_narrativa",
         "fa_eye": "549",
-        "fa_heart_o":"456",
+        "fa_heart_o": "456",
         "title_a": "il mondo fino a 7"
       },
       {
@@ -87,7 +86,7 @@
         "titolo": "",
         "data_option_value": "romanzi_narrativa",
         "fa_eye": "549",
-        "fa_heart_o":"456",
+        "fa_heart_o": "456",
         "title_a": "l'amico immaginario"
       },
       {
@@ -95,7 +94,7 @@
         "titolo": "",
         "data_option_value": "fantasy",
         "fa_eye": "549",
-        "fa_heart_o":"456",
+        "fa_heart_o": "456",
         "title_a": "l'attraversaspecchi"
       },
       {
@@ -103,7 +102,7 @@
         "titolo": "",
         "data_option_value": "biografie",
         "fa_eye": "549",
-        "fa_heart_o":"456",
+        "fa_heart_o": "456",
         "title_a": "anna frank"
       },
       {
@@ -111,7 +110,7 @@
         "titolo": "",
         "data_option_value": "fantasy",
         "fa_eye": "549",
-        "fa_heart_o":"456",
+        "fa_heart_o": "456",
         "title_a": "il castello errante di howl"
       },
       {
@@ -119,7 +118,7 @@
         "titolo": "",
         "data_option_value": "gialli",
         "fa_eye": "549",
-        "fa_heart_o":"456",
+        "fa_heart_o": "456",
         "title_a": "sherlock holmes"
       },
       {
@@ -127,7 +126,7 @@
         "titolo": "",
         "data_option_value": "romanzi_narrativa",
         "fa_eye": "549",
-        "fa_heart_o":"456",
+        "fa_heart_o": "456",
         "title_a": "piccole donne"
       },
       {
@@ -135,7 +134,7 @@
         "titolo": "",
         "data_option_value": "biografie",
         "fa_eye": "549",
-        "fa_heart_o":"456",
+        "fa_heart_o": "456",
         "title_a": "obama biografia"
       },
       {
@@ -143,114 +142,32 @@
         "titolo": "",
         "data_option_value": "gialli",
         "fa_eye": "549",
-        "fa_heart_o":"456",
+        "fa_heart_o": "456",
         "title_a": "c'é un cadavere in biblioteca"
       }
     ]
   },
-
-  "novità": {
+  "novita": {
     "introduzione": {
       "h3": "le nostre novità e progetti",
       "p": "ricevi tutte le nostre novità ,idee e progetti dal nostro blog"
     },
-    "novità & consigli": [
+    "novita_consigli": [
       {
         "img": "",
-        "h3": "",
-        "ul": [
-          {
-            "li":"",
-            "li":"",
-            "li":""
-          }
-        ],
-        "p": ""
-
+        "h3": "titolo 1"
       },
       {
         "img": "",
-        "h3": "",
-        "ul": [
-          {
-            "li":"",
-            "li":"",
-            "li":""
-          }
-        ],
-        "p": ""
+        "h3": "titolo 2"
       },
       {
         "img": "",
-        "h3": "",
-        "ul": [
-          {
-            "li":"",
-            "li":"",
-            "li":""
-          }
-        ],
-        "p": ""
+        "h3": "titolo 3"
       },
       {
         "img": "",
-        "h3": "",
-        "ul": [
-          {
-            "li":"",
-            "li":"",
-            "li":""
-          }
-        ],
-        "p": ""
-      },
-      {
-        "img": "",
-        "h3": "",
-        "ul": [
-          {
-            "li":"",
-            "li":"",
-            "li":""
-          }
-        ],
-        "p": ""
-      },
-      {
-        "img": "",
-        "h3": "",
-        "ul": [
-          {
-            "li":"",
-            "li":"",
-            "li":""
-          }
-        ],
-        "p": ""
-      },
-      {
-        "img": "",
-        "h3": "",
-        "ul": [
-          {
-            "li":"",
-            "li":"",
-            "li":""
-          }
-        ],
-        "p": ""
-      },
-      {
-        "img": "",
-        "h3": "",
-        "ul": [
-          {
-            "li":"",
-            "li":"",
-            "li":""
-          }
-        ],
-        "p": ""
+        "h3": "titolo 4"
       }
     ]
   }

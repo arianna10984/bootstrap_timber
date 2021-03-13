@@ -1,4 +1,4 @@
-console.log("ciao desde script_data.js");
+//console.log("ciao desde script_data.js");
 caricaJSON();
 
 function caricaJSON() {
@@ -16,11 +16,67 @@ function caricaJSON() {
             carica_primo_paragrafo_bs(data);
             carica_ul_opzioni(data);
             carica_portfolio_block(data);
+            carica_novita(data);
 
         })
         .catch(error => console.log(error));
 }
 
+
+function carica_novita(data) {
+
+    console.log("carica_novita");
+    console.log("data: ", data);
+
+    let html = '';
+    var div_padre = document.querySelector("div#novita");
+    data.novita.novita_consigli.forEach(function (item, index) {
+
+        console.log("h3:", item.h3);
+        console.log("index: ", index);
+
+        if (index % 2 === 0) {
+            html += `
+<div class="container">
+        <div class="row news">
+            <div class="col-md-6  text-left">
+                <img class="img-responsive picsGall" src="images/picNews/news1.jpg"/>
+                <h3><a href="#">${item.h3}</a></h3>
+                <ul>
+                    <li><i class="fa fa-calendar"></i>April 25, 2014</li>
+                    <li><a href="#"><i class="fa fa-folder-open"></i>Staff</a></li>
+                    <li><a href="#"><i class="fa fa-comments"></i>17 comments</a></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet
+                    phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget. <a
+                            class="readMore" href="#">Read More <i class="fa fa-angle-right"></i></a></p>
+                <hr class="hrNews">
+            </div>`
+        } else {
+            html += `
+            <div class="col-md-6 text-right">
+                <img class="img-responsive picsGall" src="images/picNews/news2.jpg"/>
+                <h3><a href="#">${item.h3}</a></h3>
+                <ul>
+                    <li><i class="fa fa-calendar"></i>April 25, 2014</li>
+                    <li><a href="#"><i class="fa fa-folder-open"></i>Staff</a></li>
+                    <li><a href="#"><i class="fa fa-comments"></i>17 comments</a></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet
+                    phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget. <a
+                            class="readMore" href="#">Read More <i class="fa fa-angle-right"></i></a></p>
+                <hr class="hrNews">
+            </div>
+        </div>
+    </div>`;
+        }
+
+
+    })
+
+    div_padre.innerHTML = html;
+
+}
 
 
 function carica_titoli_a_principali(data) {
@@ -149,8 +205,8 @@ function carica_ul_opzioni(data) {
 }
 
 function carica_portfolio_block(data) {
-    console.log("carica_portfolio_block");
-    console.log("data: ", data);
+    //console.log("carica_portfolio_block");
+    //console.log("data: ", data);
 
     let html = '';
     var div_padre = document.querySelector("div.portfolio_block");
