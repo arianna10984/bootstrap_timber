@@ -18,18 +18,39 @@ function caricaJSON() {
             carica_portfolio_block(data);
             carica_novita(data);
 
+
+
         })
         .catch(error => console.log(error));
 }
 
 
+
+
 function carica_novita(data) {
 
-    console.log("carica_novita");
-    console.log("data: ", data);
+
+
+    /*console.log("carica_novita");
+    console.log("data: ", data);*/
 
     let html = '';
     var div_padre = document.querySelector("div#novita");
+    var h3 = data.novita.introduzione.h3;
+    var p = data.novita.introduzione.p;
+
+    html += `<div id="novita">
+    <div class="line4">
+        <div class="container">
+            <div class="row Ama">
+                <div class="col-md-12">
+                    <h3>${h3}</h3>
+                    <p>${p}</p>
+                </div>
+            </div>
+        </div>
+    </div>`;
+
     data.novita.novita_consigli.forEach(function (item, index) {
 
         console.log("h3:", item.h3);
@@ -37,10 +58,12 @@ function carica_novita(data) {
 
         if (index % 2 === 0) {
             html += `
+
+
 <div class="container">
         <div class="row news">
             <div class="col-md-6  text-left">
-                <img class="img-responsive picsGall" src="images/picNews/news1.jpg"/>
+                <img class="img-responsive picsGall" src="custom/img_novita/${item.img}"/>
                 <h3><a href="#">${item.h3}</a></h3>
                 <ul>
                     <li><i class="fa fa-calendar"></i>April 25, 2014</li>
@@ -55,7 +78,7 @@ function carica_novita(data) {
         } else {
             html += `
             <div class="col-md-6 text-right">
-                <img class="img-responsive picsGall" src="images/picNews/news2.jpg"/>
+                <img class="img-responsive picsGall" src="custom/img_novita/${item.img}"/>
                 <h3><a href="#">${item.h3}</a></h3>
                 <ul>
                     <li><i class="fa fa-calendar"></i>April 25, 2014</li>

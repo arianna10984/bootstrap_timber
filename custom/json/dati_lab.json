@@ -47,8 +47,8 @@
   },
   "besteller": {
     "primo_paragrafo_bs": {
-      "h3": "fffffffffff",
-      "p": "sssdddddddddd"
+      "h3": "BESTELLER",
+      "p": "i libri dal grande successo"
     },
     "opzioni_libri": [
       {
@@ -149,25 +149,41 @@
   },
   "novita": {
     "introduzione": {
-      "h3": "le nostre novità e progetti",
-      "p": "ricevi tutte le nostre novità ,idee e progetti dal nostro blog"
+      "h3": "novita & consigli",
+      "p": "novità sui libri migliori (o peggiori) e consigli per cominciare"
     },
     "novita_consigli": [
       {
-        "img": "",
-        "h3": "titolo 1"
+        "img": "The_Cursed_Child.png",
+        "h3": "il bambino VERAMENTE maledetto"
       },
       {
-        "img": "",
-        "h3": "titolo 2"
+        "img": "Later.jpeg",
+        "h3": "LATER : il nuovo capolavoro di Stephen King"
       },
       {
-        "img": "",
+        "img": "manga.jpeg",
         "h3": "titolo 3"
       },
       {
-        "img": "",
+        "img": "la_regina_degli_scacchi.jpeg",
         "h3": "titolo 4"
+      },
+      {
+        "img": "samuel_stern.jpeg",
+        "h3": "SAMUEL STERN il nuovo incubo"
+      },
+      {
+        "img": "v_per_vendetta.jpeg",
+        "h3": "V per VENDETTA : la lotta contro il sistema"
+      },
+      {
+        "img": "game_of_thrones.jpeg",
+        "h3": "il TRONO di SPADE "
+      },
+      {
+        "img": "buonanotte_bambine_ribelli.jpeg",
+        "h3": "storie della buonanotte per bambine ribelli "
       }
     ]
   }
